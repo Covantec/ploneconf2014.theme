@@ -28,6 +28,7 @@ setup(name='ploneconf2014.theme',
           'setuptools',
           'z3c.jbot',
           # -*- Extra requirements: -*-
+          'plone.api',
       ],
       extras_require={
         'test': ['plone.app.testing'],
