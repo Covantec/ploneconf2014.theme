@@ -34,4 +34,10 @@
       permission="zope2.Public"
       />
 
+<!-- -*- extra stuff goes here -*- -->
+
+  <include package=".browser" />
+
+
+
 </configure>
