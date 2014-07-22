@@ -27,4 +27,11 @@
       layer=".interfaces.ICustomTheme"
       />
 
+  <browser:page
+      name="hello"
+      for="*"
+      class=".hello.HelloWorld"
+      permission="zope2.Public"
+      />
+
 </configure>
