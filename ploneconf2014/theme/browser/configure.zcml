@@ -13,4 +13,42 @@
       permission="zope.Public"
       />
 
+  <browser:viewlet
+      name="ploneconf2014.theme.helloworld"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      class=".viewlets.MyHelloWorldViewlet"
+      layer="..interfaces.ICustomTheme"
+      permission="zope2.View"
+      />
+
+  <!-- Zope 3 browser resources -->
+
+  <!-- Resource directory for images
+    See ploneconf2014/theme/browser/images/README.txt
+    for more information about registering images as Zope 3 browser
+    resources.
+  -->
+  <browser:resourceDirectory
+      name="ploneconf2014.theme.images"
+      directory="images"
+      layer="..interfaces.ICustomTheme"
+      />
+
+  <!-- Resource directory for stylesheets
+    See ploneconf2014/theme/browser/stylesheets/README.txt
+    for more information about registering stylesheets as Zope 3 browser
+    resources.
+  -->
+  <browser:resourceDirectory
+      name="ploneconf2014.theme.stylesheets"
+      directory="stylesheets"
+      layer="..interfaces.ICustomTheme"
+      />
+
+  <browser:resourceDirectory
+      name="ploneconf2014.theme.javascripts"
+      directory="javascripts"
+      layer="..interfaces.ICustomTheme"
+      />
+
 </configure>
